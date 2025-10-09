@@ -3,6 +3,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import cors from "cors";
 import dotenv from "dotenv";
+import productRoutes from "./routes/productRoutes.js";
 
 //load environment variables from .env file
 dotenv.config();
@@ -22,6 +23,9 @@ app.use(helmet());
 
 //morgan middleware for logging HTTP requests
 app.use(morgan("dev"));
+
+//import routes
+app.use('/api/products', productRoutes)
 
 //listen for requests
 app.listen(PORT, () => {

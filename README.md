@@ -9,8 +9,6 @@ A minimal e-commerce example with a Node/Express + Neon/Postgres backend and a R
 - Tech stack
 - API
 - Important files
-- Contributing
-- License
 
 ## About
 
